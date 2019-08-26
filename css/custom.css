@@ -1,0 +1,13 @@
+/* your styles go here */
+.testimonial {
+  display: inline;
+}
+.owl-carousel .owl-item {
+  text-align: -webkit-center;
+  width: 50%;
+  align-items: center;
+}
+.owl-carousel .owl-item img{
+  width: 50%;
+  align-items: center;
+}
