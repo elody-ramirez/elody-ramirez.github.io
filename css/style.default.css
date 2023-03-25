@@ -83,7 +83,7 @@ section {
 
 .bg-gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#4fbfa8), to(#74cdba)) !important;
-  background: linear-gradient(to bottom, #4fbfa8, #74cdba) !important;
+  background: linear-gradient(to bottom, #4fbfa8, #ffffff) !important;
   color: #fff;
 }
 
@@ -122,8 +122,10 @@ section {
 nav.navbar {
   padding-top: 0;
   padding-bottom: 0;
-  background: #fff;
-  border-bottom: 1px solid #e6e6e6;
+  /* background: #fff;
+  border-bottom: 1px solid #e6e6e6; */ 
+  transition: all .5s ease-in-out;
+  background-color: transparent;
 }
 
 @media (max-width: 991.98px) {
@@ -372,6 +374,7 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 *
 */
 .statistics-section {
+  height: 450px;
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
@@ -557,7 +560,7 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 * =====================
 *
 */
-.customers-section img {
+.skills-section img {
   padding: 10px;
   max-width: 80px;
 }
