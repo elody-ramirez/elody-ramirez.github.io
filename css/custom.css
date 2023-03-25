@@ -28,6 +28,29 @@
   background: linear-gradient(to bottom, #fff, #222) !important;
   color: #fff;
 }
+.intro {
+  height: 100vh;
+  /* position: relative; */
+}
+.intro .overlay-intro {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+.intro .content {
+  text-align: center;
+  position: absolute;
+}
+.intro .spacing {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+}
 .contact-color {
   background-color: #4fbfa8;
 }
