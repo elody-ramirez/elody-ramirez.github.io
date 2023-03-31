@@ -1,5 +1,4 @@
 $(function () {
-
 	/*--/ Navbar Menu Reduce /--*/
 	$(window).trigger("scroll")
 	$(window).on("scroll", function () {
@@ -17,6 +16,11 @@ $(function () {
 		} else {
 			$(".scrolltop-mf").fadeOut(1000, "easeInOutExpo")
 		}
+	})
+
+	// Closes responsive menu when a scroll trigger link is clicked
+	$(".js-scroll").on("click", function () {
+		$(".navbar-collapse").collapse("hide")
 	})
 
 	/* =========================================
