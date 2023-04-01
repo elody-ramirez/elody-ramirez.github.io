@@ -14,14 +14,18 @@ $(function () {
 
 		var windowHeight = $(window).height();
 		var projectsTop = $("#projects").offset().top
+		var skillsTop = $("#skills").offset().top
 		var projectsBottom = projectsTop + $("#projects").height()
 		if ($(window).scrollTop() + windowHeight >= $(document).height() - 2) {
-    	// If the user has scrolled to the bottom, add the "active" class to the last nav link
-    	$("nav.navbar").find(".active").removeClass("active");
-   		$("nav.navbar").find(".nav-link[href='#contact']").addClass("active");
+			// If the user has scrolled to the bottom, add the "active" class to the last nav link
+			$("nav.navbar").find(".active").removeClass("active")
+			$("nav.navbar").find(".nav-link[href='#contact']").addClass("active")
 		} else if ($(window).scrollTop() + windowHeight >= projectsTop) {
 			$("nav.navbar").find(".active").removeClass("active")
 			$("nav.navbar").find(".nav-link[href='#projects']").addClass("active")
+		} else if ($(window).scrollTop() + windowHeight >= skillsTop) {
+			$("nav.navbar").find(".active").removeClass("active")
+			$("nav.navbar").find(".nav-link[href='#skills']").addClass("active")
 		}
 	})
 
