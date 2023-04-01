@@ -11,12 +11,15 @@ $(function () {
 			$(".navbar-expand-lg").addClass("navbar-trans")
 			$(".navbar-expand-lg").removeClass("navbar-reduce")
 		}
-		if ($(window).scrollTop() > top) {
-			$(".scrolltop-mf").fadeIn(1000, "easeInOutExpo")
-		} else {
-			$(".scrolltop-mf").fadeOut(1000, "easeInOutExpo")
-		}
 	})
+
+	$('.navbar-toggler').on('click', function() {
+    if( ! $('#mainNav').hasClass('navbar-reduce')) {
+      $('#mainNav').addClass('navbar-reduce');
+    } else if ($(window).scrollTop() < 50) {
+			$("#mainNav").removeClass("navbar-reduce")
+		}
+  })
 
 	// Closes responsive menu when a scroll trigger link is clicked
 	$(".js-scroll").on("click", function () {
